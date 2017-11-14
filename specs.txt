@@ -1,0 +1,15 @@
+Songs Manager
+ 
+- View songs
+	- define song
+	- create user interface
+	- mock songs
+- Add song (persistently)
+	- add top bar button
+	- pressing the button -> new VC
+	- create UI for adding song
+	- save song
+- Remove song
+- Edit song
+- Filter songs
+- Play song
