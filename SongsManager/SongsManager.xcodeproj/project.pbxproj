@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		CE2B931E1FBB3C9F00F435C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2B931D1FBB3C9F00F435C7 /* AppDelegate.swift */; };
-		CE2B93201FBB3C9F00F435C7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2B931F1FBB3C9F00F435C7 /* ViewController.swift */; };
-		CE2B93231FBB3C9F00F435C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE2B93211FBB3C9F00F435C7 /* Main.storyboard */; };
+		CE2B93201FBB3C9F00F435C7 /* ViewSongsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2B931F1FBB3C9F00F435C7 /* ViewSongsViewController.swift */; };
+		CE2B93231FBB3C9F00F435C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE2B93211FBB3C9F00F435C7 /* Main.storyboard */; settings = {ASSET_TAGS = (add, ); }; };
 		CE2B93251FBB3C9F00F435C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE2B93241FBB3C9F00F435C7 /* Assets.xcassets */; };
 		CE2B93281FBB3C9F00F435C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE2B93261FBB3C9F00F435C7 /* LaunchScreen.storyboard */; };
+		CE2B93321FBB5B9F00F435C7 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2B93311FBB5B9F00F435C7 /* Song.swift */; };
+		CE8738F11FC5E20A007BF241 /* AddOrEditSongViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8738F01FC5E20A007BF241 /* AddOrEditSongViewController.swift */; };
+		CEF0D9901FDD75F00064612B /* SongsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF0D98F1FDD75F00064612B /* SongsController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CE2B931A1FBB3C9F00F435C7 /* SongsManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SongsManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE2B931D1FBB3C9F00F435C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CE2B931F1FBB3C9F00F435C7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CE2B931F1FBB3C9F00F435C7 /* ViewSongsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewSongsViewController.swift; sourceTree = "<group>"; };
 		CE2B93221FBB3C9F00F435C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CE2B93241FBB3C9F00F435C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE2B93271FBB3C9F00F435C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE2B93291FBB3C9F00F435C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE2B93311FBB5B9F00F435C7 /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
+		CE8738F01FC5E20A007BF241 /* AddOrEditSongViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddOrEditSongViewController.swift; sourceTree = "<group>"; };
+		CEF0D98F1FDD75F00064612B /* SongsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongsController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,41 @@
 		CE2B931C1FBB3C9F00F435C7 /* SongsManager */ = {
 			isa = PBXGroup;
 			children = (
+				CE828C221FEC01A200C9F633 /* View */,
+				CE828C231FEC01A800C9F633 /* Controller */,
 				CE2B931D1FBB3C9F00F435C7 /* AppDelegate.swift */,
-				CE2B931F1FBB3C9F00F435C7 /* ViewController.swift */,
-				CE2B93211FBB3C9F00F435C7 /* Main.storyboard */,
 				CE2B93241FBB3C9F00F435C7 /* Assets.xcassets */,
 				CE2B93261FBB3C9F00F435C7 /* LaunchScreen.storyboard */,
 				CE2B93291FBB3C9F00F435C7 /* Info.plist */,
 			);
 			path = SongsManager;
+			sourceTree = "<group>";
+		};
+		CE828C211FEC019B00C9F633 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CE2B93311FBB5B9F00F435C7 /* Song.swift */,
+				CEF0D98F1FDD75F00064612B /* SongsController.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CE828C221FEC01A200C9F633 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE2B93211FBB3C9F00F435C7 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE828C231FEC01A800C9F633 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CE2B931F1FBB3C9F00F435C7 /* ViewSongsViewController.swift */,
+				CE8738F01FC5E20A007BF241 /* AddOrEditSongViewController.swift */,
+				CE828C211FEC019B00C9F633 /* Model */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -90,6 +123,9 @@
 		CE2B93121FBB3C9E00F435C7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					add,
+				);
 				LastSwiftUpdateCheck = 0910;
 				LastUpgradeCheck = 0910;
 				ORGANIZATIONNAME = Ruxi;
@@ -136,7 +172,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE2B93201FBB3C9F00F435C7 /* ViewController.swift in Sources */,
+				CE2B93321FBB5B9F00F435C7 /* Song.swift in Sources */,
+				CE8738F11FC5E20A007BF241 /* AddOrEditSongViewController.swift in Sources */,
+				CEF0D9901FDD75F00064612B /* SongsController.swift in Sources */,
+				CE2B93201FBB3C9F00F435C7 /* ViewSongsViewController.swift in Sources */,
 				CE2B931E1FBB3C9F00F435C7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
