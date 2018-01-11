@@ -62,6 +62,7 @@
 			children = (
 				CE828C221FEC01A200C9F633 /* View */,
 				CE828C231FEC01A800C9F633 /* Controller */,
+				CE828C211FEC019B00C9F633 /* Model */,
 				CE2B931D1FBB3C9F00F435C7 /* AppDelegate.swift */,
 				CE2B93241FBB3C9F00F435C7 /* Assets.xcassets */,
 				CE2B93261FBB3C9F00F435C7 /* LaunchScreen.storyboard */,
@@ -92,7 +93,6 @@
 			children = (
 				CE2B931F1FBB3C9F00F435C7 /* ViewSongsViewController.swift */,
 				CE8738F01FC5E20A007BF241 /* AddOrEditSongViewController.swift */,
-				CE828C211FEC019B00C9F633 /* Model */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
